@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@700&family=Playfair+Display:ital,wght@1,600&display=swap');
+
+page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://getwallpapers.com/wallpaper/full/3/a/4/668562.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  box-shadow: 0 0 0.5cm;
+  margin-bottom:1cm; 
+  margin: 5em auto;
+}
+.A4{
+  width: 22cm;
+  height: 29cm;
+}
+.h1{
+  font-family: 'Oswald', serif;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  position:relative;
+  top: -20px;
+}
+h5{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.head2{
+  margin-left: 38px;
+  position: relative;
+  top: -40px;
+  color:#ffb6c1;
+  font-style: oblique;
+  padding-bottom: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    ". . head" 
+    "health . tech" 
+    ". title ." 
+    "movies issue fitness";
+}
+.head{
+  grid-area: head;
+  color: #fce205;
+  font-family: 'Oswald', sans-serif;
+}
+#head{
+  color: white;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.title{
+  grid-area: title;
+  color: #fce205;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  top: -160px;
+  right: -20px;
+}
+.title > h1{
+  font-size: 50px;
+}
+  position: relative;
+  top: -120px;
+}
+li{
+  color: white;
+  font-family: 'Open Sans', san-serif;
+}
+.tech{
+  grid-area: tech;
+  color: #fce205;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 20px;
+  position: relative;
+  right: -60px;
+  top; -20px;
+}
+.tech > p, .movies > p, .fitness > p {
+  color: #ffb6c1;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.movies{
+  grid-area: movies;
+  color: #fce205;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 20px;
+  position: relative;
+  top: -120px;
+}
+.link{
+  color: #ffb6c1;
+  font-style: italic;
+  font-size: 15px;
+}
+a{
+  cursor: pointer;
+}
+a:hover{
+  background-color: white;
+}
+.fitness{
+   grid-area: fitness;
+  color: #fce205;
+  font-family: 'Oswald', sans-serif;
+  margin-right: 15px;
+  position: relative;
+  top: -70px;
+}
+.issue{
+  grid-area: issue;
+  position: relative;
+  bottom: -120px;
+  
+}
+footer{
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  font-style: oblique;
+}
